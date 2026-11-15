@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Ajagunna Marufdeen Biodun</title>
+    <meta name="description" content="Contact form for Ajagunna Marufdeen Biodun, a Cybersecurity student." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand">Ajagunna Marufdeen Biodun</a>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s connect and collaborate</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container form-layout">
+          <div class="contact-panel">
+            <h2>Get in touch</h2>
+            <p>
+              Whether you’re looking for a collaboration, internship opportunity, or just want to
+              say hello, I’d love to hear from you.
+            </p>
+            <ul class="contact-list">
+              <li>Email: m.ajagunna0796@miva.edu.ng</li>
+              <li>Student ID: 2025/B/CYB/1083</li>
+              <li>Program: Cybersecurity</li>
+            </ul>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="field-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" />
+              <small class="error-message" data-error-for="name"></small>
+            </div>
+
+            <div class="field-group">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" />
+              <small class="error-message" data-error-for="email"></small>
+            </div>
+
+            <div class="field-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" />
+              <small class="error-message" data-error-for="phone"></small>
+            </div>
+
+            <div class="field-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+              <small class="error-message" data-error-for="message"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© Copyright <span id="year"></span> MIVA Open University All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

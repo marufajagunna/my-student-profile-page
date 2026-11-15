@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajagunna Marufdeen Biodun | Student Portfolio</title>
+    <meta
+      name="description"
+      content="Responsive student portfolio and academic management website for Ajagunna Marufdeen Biodun, a Cybersecurity student."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand">Ajagunna Marufdeen Biodun</a>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Student • Cybersecurity • Digital Security</p>
+            <h1>Welcome to my academic portfolio.</h1>
+            <p class="lead">
+              I’m Ajagunna Marufdeen Biodun, a Cybersecurity student at MIVA Open University,
+              committed to learning secure systems, protecting digital assets, and building a
+              strong foundation in modern information security practices.
+            </p>
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">View My Work</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <ul class="quick-facts">
+              <li><strong>Program</strong> Cybersecurity</li>
+              <li><strong>ID</strong> 2025/B/CYB/1083</li>
+              <li><strong>Focus</strong> Threats & Protection</li>
+            </ul>
+          </div>
+          <div class="hero-visual">
+            <div class="portrait-card">
+              <img
+                src="myPhoto.jpeg"
+                alt="Ajagunna Marufdeen Biodun portrait"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About me</p>
+            <h2>Driven by creativity and code.</h2>
+          </div>
+          <div class="about-preview">
+            <div>
+              <p>
+                I am a motivated university student exploring the intersection of design,
+                technology, and problem-solving. My academic work has allowed me to
+                develop practical skills in front-end development, systems thinking,
+                and team collaboration, while nurturing my passion for creating elegant,
+                accessible digital experiences.
+              </p>
+              <p>
+                Beyond the classroom, I enjoy learning new tools, contributing to student
+                projects, and building platforms that make technology easier to use and
+                more impactful for everyday life.
+              </p>
+            </div>
+            <div class="mini-list">
+              <h3>Current focus</h3>
+              <ul>
+                <li>Front-end design & development</li>
+                <li>Responsive web experiences</li>
+                <li>Academic research & innovation</li>
+                <li>Product thinking & UX strategy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Academic overview</p>
+            <h2>Performance snapshot</h2>
+          </div>
+
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th>Semester</th>
+                <th>Course</th>
+                <th>Grade</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2024/25 - Sem 1</td>
+                <td>Web Development</td>
+                <td>A</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td>2024/25 - Sem 1</td>
+                <td>Human-Computer Interaction</td>
+                <td>A</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td>2024/25 - Sem 2</td>
+                <td>Database Systems</td>
+                <td>A-</td>
+                <td>In Progress</td>
+              </tr>
+              <tr>
+                <td>2024/25 - Sem 2</td>
+                <td>Software Engineering</td>
+                <td>A</td>
+                <td>In Progress</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Featured media</p>
+            <h2>Learning and creating</h2>
+          </div>
+          <div class="media-card">
+            <video controls poster="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80">
+              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© Copyright <span id="year"></span> MIVA Open University All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
