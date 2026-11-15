@@ -29,10 +29,33 @@ jobs:
         with:
           enablement: true
 
+      - name: Prepare site artifact
+        run: |
+          mkdir -p _site/html _site/css _site/js _site/assets/images
+          cp -R html/. _site/html/
+          cp -R css/. _site/css/
+          cp -R js/. _site/js/
+          cp -R assets/. _site/assets/
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <meta http-equiv="refresh" content="0; url=html/index.html">
+              <title>Ajagunna Marufdeen Biodun | Student Portfolio</title>
+            </head>
+            <body>
+              <p>Opening the <a href="html/index.html">student portfolio</a>…</p>
+              <script>window.location.replace("html/index.html");</script>
+            </body>
+          </html>
+          EOF
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

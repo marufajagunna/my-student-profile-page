@@ -9,6 +9,12 @@ This project is a responsive student portfolio and academic management website b
 - Academic Planner
 - Contact
 
+## Project structure
+- `html/` contains the website pages.
+- `css/` contains the stylesheet.
+- `js/` contains the interactive behavior.
+- `assets/images/` contains the portrait image.
+
 ## Features
 - Responsive layout
 - Mobile-friendly navigation
@@ -18,14 +24,14 @@ This project is a responsive student portfolio and academic management website b
 
 ## Local preview
 
-Open the project in a browser using a local web server:
+From the project directory, start a local web server:
 
 ```bash
-cd /Users/maruf/Desktop/csc106
+cd /Users/maruf/Desktop/csc106/my-student-profile-page
 python3 -m http.server 8000
 ```
 
-Then visit http://localhost:8000
+Then visit http://localhost:8000/html/ . The Pages workflow builds a root redirect so the published home page remains at the repository's main Pages URL.
 
 ## GitHub Pages deployment
 
